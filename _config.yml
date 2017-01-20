@@ -13,22 +13,46 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
+title: 王颢的后花园
+#email: wang.hao-1@163.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  用时间沉淀技术，写文章既可以形成自己的知识体系，又可以帮助别人
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+#add by wanghao 2017-1-20
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+#add by wanghao 2017-1-20
+highlighter: rouge 
+gems: [jekyll-paginate]
+paginate: 5
+
+#theme: minima by wanghao 2017-1-20
+#gems:
+#  - jekyll-feed
+#exclude:
+#  - Gemfile
+#  - Gemfile.lock
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+social:
+  github: flyingsnow0106
+  twitter: flyingsnow0106
+  facebook: flyingsnow0106
+  email: wang.hao-1@163.com
+  
+google_analytics: "UA-58263416-1"	
+
